@@ -1,6 +1,4 @@
-*. show the users: add sceneId
 *. in room behaviour
-*. connect items
 
 
 
@@ -9,12 +7,10 @@
 
 *.make it look nice
 
-
-
-
-
 [H]. remove item after taking
 
+[V]. connect items
+[V]. show the users: add sceneId
 [V].adjust to screen size
 [V]. collect items into the bag
 [V]. see how to remove the "click to load panorama"

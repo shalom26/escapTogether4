@@ -3,7 +3,7 @@
 
   angular.module('etGame.common')
 
-  .directive('bag',function(BagFactory){
+  .directive('bag',function(BagFactory,SceneFactory){
     return {
       restrict: 'E',
       transclude: true,
@@ -17,8 +17,10 @@
           console.log(item);
         };
 
-        $scope.items = BagFactory.all();
-        $scope.itemSelect = function(itemId){
+          $scope.items = BagFactory.all();
+
+          $scope.itemSelect = function(itemId){
+          SceneFactory.itemInhande(itemId);
 
           $scope.itemIdShow = itemId;
           $scope.Itemshow = true ;

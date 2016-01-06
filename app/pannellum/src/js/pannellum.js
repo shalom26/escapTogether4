@@ -860,6 +860,18 @@ function createHotSpots() {
                 span.style.cursor = 'pointer';
                 a.appendChild(div);
 
+            } else if (hs.POI) {
+                a = document.createElement('a');
+                a.addEventListener('click', function () {
+                    window.top.postMessage({POI : hs.POI}, '*');
+                });
+
+                document.getElementById('container').appendChild(a);
+                div.style.cursor = 'pointer';
+                span.style.cursor = 'pointer';
+                a.appendChild(div);
+
+
 
             } else {
                 if (hs.sceneId) {

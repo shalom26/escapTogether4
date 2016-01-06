@@ -4,7 +4,8 @@
   <div ng-repeat="user in vm.usersInScene" >
 
     <img ng-class="{playerAway : (user.sceneId !== vm.sceneId)}" ng-src="img/common/{{user.gender}}.png" alt="">
-    {{vm.sceneId}}
+    {{user.sceneId}}&nbsp{{vm.sceneId}}
+
 
 
   </div>

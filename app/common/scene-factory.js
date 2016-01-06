@@ -7,17 +7,24 @@
 
         .factory('SceneFactory',function($rootScope, BagFactory, GameFactory){
                 var currScene = 'pondCube' ;
+                var itemInHande = null;
             window.addEventListener('message', function (msg) {
                 //console.log('msg is: ', msg);
                 if (msg.data.itemId) {
                     BagFactory.addItem(msg.data.itemId);
                 } else  if (msg.data.sceneId) {
                     currScene = msg.data.sceneId ;
-                    console.log('msg.data.sceneId',msg.data.sceneId);
+                    //console.log('msg.data.sceneId',msg.data.sceneId);
+                    console.log('currScene',currScene);
                     GameFactory.changeUserScene(msg.data.sceneId);
-                    //console.log('UserScene',GameFactory.getCurrSceneId());
-                    //console.log('users',GameFactory.getUsersInCurrScene());
+
+                } else if (msg.data.POI){
+                    console.log('itemInHande',itemInHande);
+                    console.log('msg.data.POI',msg.data.POI);
+
+                   if(msg.data.POI === itemInHande ) console.log('Items Match');
                 }
+
                 $rootScope.$apply();
             });
 
@@ -26,7 +33,9 @@
             return {
                 getCurrScene: function () {
                     return currScene ;
-
+                },
+                itemInhande: function (itemId) {
+                    itemInHande =itemId;
                 }
 
             }
