@@ -1,0 +1,153 @@
+﻿{
+    "default": {
+        "author": "Bamba",
+        "firstScene": "pondCube",
+        "sceneFadeDuration": 2000
+    },
+    "scenes": {
+        "pondCube": {
+            "autoLoad":true,
+            "hotSpotDebug":true,
+            "compass":true ,
+            "type": "cubemap",
+            "cubeMap": [
+                "./examplepanocube0.jpg",
+                "./examplepanocube1.jpg",
+                "./examplepanocube2.jpg",
+                "./examplepanocube3.jpg",
+                "./examplepanocube4.jpg",
+                "./examplepanocube5.jpg"
+            ],
+            "hotSpots": [
+                {
+                    "id" : 101,
+                    "pitch": -12,
+                    "yaw": 0,
+                    "type": "info",
+                    "text": "This is Jordan Pond, located in Acadia National Park."
+                },
+                {
+                    "id" : 102,
+                    "pitch": -10,
+                    "yaw": -160,
+                    "type": "info",
+                    "text": "Shalom.",
+                    "URL": "www.love.com"
+                },
+                {
+                    "id" : 103 ,
+                    "pitch": -10,
+                    "yaw": -162,
+                    "type": "info",
+                    "text": "Excape",
+                    "itemId":125
+                },
+
+                {
+                    "id" : 104,
+                    "pitch": -10,
+                    "yaw": -180,
+                    "type": "scene",
+                    "text": "bathroom",
+                    "sceneId":"bathroom"
+
+                }
+            ]
+        },
+        "bathroom": {
+            "autoLoad":true,
+            "hotSpotDebug":true,
+            "compass":true ,
+            "type": "equirectangular",
+            "panorama": [
+                "./img/bathroom.jpg"
+            ],
+            "hotSpots": [
+                {   "id" : 201,
+                    "pitch": -12,
+                    "yaw": -170,
+                    "type": "info",
+                    "text": "This is Jordan Pond, located in Acadia National Park."
+                },
+                {
+                    "id" : 202,
+                    "pitch": -10,
+                    "yaw": -100,
+                    "type": "info",
+                    "text": "Shalom.",
+                    "URL": "www.love.com"
+                },
+
+
+                {
+                    "id" : 203,
+                    "pitch": -10,
+                    "yaw": 20,
+                    "type": "scene",
+                    "text": "class",
+                    "sceneId":"class"
+                }
+            ]
+        },
+        "sonyCenter": {
+            "autoLoad":true,
+            "hotSpotDebug":true,
+            "compass":true ,
+            "type": "equirectangular",
+            "panorama": [
+                "./img/sonyCenter.jpg"
+
+
+
+            ],
+            "hotSpots": [
+                {
+                    "id" : 301,
+                    "pitch": -12,
+                    "yaw": -170,
+                    "type": "info",
+                    "text": "This is Jordan Pond, located in Acadia National Park."
+                },
+                {
+                    "id" : 302,
+                    "pitch": -10,
+                    "yaw": -160,
+                    "type": "info",
+                    "text": "Shalom.",
+                    "URL": "www.love.com"
+                },
+
+
+                {
+                    "id" : 303,
+                    "pitch": -10,
+                    "yaw": -180,
+                    "type": "scene",
+                    "text": "pond",
+                    "sceneId":"pondCube"
+                }
+            ]
+        }, "class": {
+            "autoLoad":true,
+            "hotSpotDebug":true,
+            "compass":true ,
+            "type": "equirectangular",
+            "panorama": [
+                "./img/class.jpg"
+            ],
+            "hotSpots": [
+
+                {
+                    "id" : 401,
+                    "pitch": -10,
+                    "yaw": -180,
+                    "type": "scene",
+                    "text": "sonyCenter",
+                    "sceneId":"sonyCenter"
+                }
+            ]
+        }
+    }
+}
+
+

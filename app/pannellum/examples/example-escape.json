@@ -1,0 +1,96 @@
+{
+    "author": "shalom",
+    "preview": "./examplepano-preview.jpg",
+    "type": "cubemap",
+    "autoLoad":true,
+    "hotSpotDebug":true,
+    "compass":true ,
+    "cubeMap": [
+        "./examplepanocube0.jpg",
+        "./examplepanocube1.jpg",
+        "./examplepanocube2.jpg",
+        "./examplepanocube3.jpg",
+        "./examplepanocube4.jpg",
+        "./examplepanocube5.jpg"
+    ],
+
+    "hotSpots": [
+        {
+            "pitch": -12,
+            "yaw": -170,
+            "type": "info",
+            "text": "This is Jordan Pond, located in Acadia National Park."
+        },
+        {
+            "pitch": -10,
+            "yaw": -160,
+            "type": "info",
+            "text": "Shalom.",
+            "URL": "https://github.com/mpetroff/pannellum"
+        },
+        {
+            "pitch": -10,
+            "yaw": -162,
+            "type": "info",
+            "text": "Excape",
+            "id":{"id":125}
+        },
+
+        {
+            "pitch": -10,
+            "yaw": -180,
+            "type": "scene",
+            "text": "scene2",
+            "sceneId":2
+        }
+
+    ]
+//},
+//        {   "author": "shalom",
+//            "preview": "./examplepano-preview.jpg",
+//            "type": "cubemap",
+//            "autoLoad":true,
+//            "hotSpotDebug":true,
+//            "compass":true ,
+//            "cubeMap": [
+//            "./examplepanocube0.jpg",
+//            "./examplepanocube1.jpg",
+//            "./examplepanocube2.jpg",
+//            "./examplepanocube3.jpg",
+//            "./examplepanocube4.jpg",
+//            "./examplepanocube5.jpg"
+//        ],
+//
+//            "hotSpots": [
+//        {
+//            "pitch": -12,
+//            "yaw": -170,
+//            "type": "info",
+//            "text": "This is Jordan Pond, located in Acadia National Park."
+//        },
+//        {
+//            "pitch": -10,
+//            "yaw": -160,
+//            "type": "info",
+//            "text": "Shalom.",
+//            "URL": "https://github.com/mpetroff/pannellum"
+//        },
+//        {
+//            "pitch": -10,
+//            "yaw": -162,
+//            "type": "info",
+//            "text": "Excape",
+//            "id":{"id":125}
+//        },
+//
+//        {
+//            "pitch": -10,
+//            "yaw": -180,
+//            "type": "scene",
+//            "text": "scene2",
+//            "sceneId":2
+//        }
+//
+//        ]
+//
+//        }

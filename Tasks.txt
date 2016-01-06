@@ -1,0 +1,26 @@
+*. show the users: add sceneId
+*. in room behaviour
+*. connect items
+
+
+
+
+*. ionic small, put inside pano
+
+*.make it look nice
+
+
+
+
+
+[H]. remove item after taking
+
+[V].adjust to screen size
+[V]. collect items into the bag
+[V]. see how to remove the "click to load panorama"
+[V]. add second panorama
+[V]. see how to work with the panorama and hotspots
+
+
+
+

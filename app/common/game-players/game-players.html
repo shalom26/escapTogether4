@@ -1,0 +1,17 @@
+
+
+<div class="usersInRoom">
+  <div ng-repeat="user in vm.usersInScene" >
+
+    <img ng-class="{playerAway : (user.sceneId !== vm.sceneId)}" ng-src="img/common/{{user.gender}}.png" alt="">
+    {{vm.sceneId}}
+
+
+  </div>
+
+  <button ng-click="vm.addUser()">Add User</button>
+
+</div>
+
+
+

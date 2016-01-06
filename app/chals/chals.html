@@ -1,0 +1,12 @@
+
+
+<div class="parent container">
+    <div class="select icon-bar">Select your challenge</div>
+    <div class="left">
+        <div class="container" ng-repeat=" chal in vm.chals">
+            <a href="#/chal:{{chal.id}}">
+            <img class="child img-responsive " ng-src="img/chal/{{chal.id}}.jpg" >
+            </a>
+        </div>
+    </div>
+</div>
