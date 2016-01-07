@@ -43,7 +43,11 @@
                 },
                 setItemInHand: function (item) {
                     itemInHand = item;
+                },
+                popUpClick : function(){
+                    console.log('popUpClicked');
                 }
+
 
 
             }
