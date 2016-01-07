@@ -806,13 +806,19 @@ function renderInit() {
     }
 }
 
+var takenItems = [];
+
 function createHotSpots() {
     if (hotspotsCreated) return;
     
     if (!config.hotSpots) {
         config.hotSpots = [];
     } else {
+
         config.hotSpots.forEach(function(hs) {
+
+            if (hs.itemId && takenItems.indexOf(hs.itemId) !== -1) return;
+
             var div = document.createElement('div');
             div.setAttribute('class', 'hotspot tooltip sprite ' + hs.type);
             
@@ -850,6 +856,7 @@ function createHotSpots() {
                 a.addEventListener('click', function () {
                     window.top.postMessage({itemId : hs.itemId}, '*');
                     document.getElementById('container').removeChild(this);
+                    takenItems.push(hs.itemId);
                     config.hotSpots = config.hotSpots.filter(function (hotspot) {
                         return hotspot.id !== hs.id;
                     });
@@ -858,12 +865,13 @@ function createHotSpots() {
                 document.getElementById('container').appendChild(a);
                 div.style.cursor = 'pointer';
                 span.style.cursor = 'pointer';
+                div.classList.add(hs.className);
                 a.appendChild(div);
 
-            } else if (hs.POI) {
+            } else if (hs.poiId) {
                 a = document.createElement('a');
                 a.addEventListener('click', function () {
-                    window.top.postMessage({POI : hs.POI}, '*');
+                    window.top.postMessage({poiId : hs.poiId}, '*');
                 });
 
                 document.getElementById('container').appendChild(a);

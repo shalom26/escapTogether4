@@ -7,7 +7,7 @@
 
         .factory('SceneFactory',function($rootScope, BagFactory, GameFactory){
                 var currScene = 'pondCube' ;
-                var itemInHande = null;
+
             window.addEventListener('message', function (msg) {
                 //console.log('msg is: ', msg);
                 if (msg.data.itemId) {
@@ -18,11 +18,9 @@
                     console.log('currScene',currScene);
                     GameFactory.changeUserScene(msg.data.sceneId);
 
-                } else if (msg.data.POI){
-                    console.log('itemInHande',itemInHande);
-                    console.log('msg.data.POI',msg.data.POI);
-
-                   if(msg.data.POI === itemInHande ) console.log('Items Match');
+                } else if (msg.data.poiId){
+                    console.log('msg.data.poiId',msg.data.poiId);
+                    GameFactory.poiClicked(msg.data.poiId);
                 }
 
                 $rootScope.$apply();
@@ -33,10 +31,8 @@
             return {
                 getCurrScene: function () {
                     return currScene ;
-                },
-                itemInhande: function (itemId) {
-                    itemInHande =itemId;
                 }
+
 
             }
         });

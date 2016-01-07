@@ -24,6 +24,7 @@
                     "pitch": -12,
                     "yaw": 0,
                     "type": "info",
+                    "image": "http://www.shirdisaitrust.org/photogallery/images/pa_baba7a.jpg",
                     "text": "This is Jordan Pond, located in Acadia National Park."
                 },
                 {
@@ -32,7 +33,7 @@
                     "yaw": -160,
                     "type": "info",
                     "text": "Shalom.",
-                    "POI":125
+                    "poiId":"poiBox1"
                 },
                 {
                     "id" : 103 ,
@@ -40,7 +41,8 @@
                     "yaw": -162,
                     "type": "info",
                     "text": "Excape",
-                    "itemId":125
+                    "itemId":"itemKey1",
+                    "className": "key"
                 },
 
                 {
@@ -85,7 +87,7 @@
                     "yaw": 20,
                     "type": "scene",
                     "text": "class",
-                    "sceneId":"class"
+                    "sceneId":"sonyCenter"
                 }
             ]
         },
@@ -93,9 +95,11 @@
             "autoLoad":true,
             "hotSpotDebug":true,
             "compass":true ,
+            "haov":80,
+            "vaov":80,
             "type": "equirectangular",
             "panorama": [
-                "./img/sonyCenter.jpg"
+                "./img/shirdi.jpg"
 
 
 

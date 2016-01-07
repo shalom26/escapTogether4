@@ -10,9 +10,10 @@
             var currUser = {};
             var users = [];
             var initialRoomId ='pondCube';
+            var itemInHand = null;
 
 
-            var itemToTarget = {1001: 2007};
+            var itemToPoi = {'itemKey1': 'poiBox1'};
 
 
 
@@ -33,6 +34,15 @@
 
                 getCurrSceneId: function () {
                     return currUser.sceneId;
+                },
+                poiClicked: function (poiId) {
+                    if (itemInHand === null) return;
+                    if (itemToPoi[itemInHand.id] === poiId) {
+                        console.log('Found a Match between item: ' + itemInHand.id + ' and poi: ' + poiId);
+                    }
+                },
+                setItemInHand: function (item) {
+                    itemInHand = item;
                 }
 
 

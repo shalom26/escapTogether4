@@ -86,4 +86,7 @@ body {
   background-color: #7a43b6;
   opacity: 0.5; }
 
+.bag .selected {
+  border: 1px solid greenyellow; }
+
 /*# sourceMappingURL=main.css.map */

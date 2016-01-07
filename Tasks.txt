@@ -7,7 +7,7 @@
 
 *.make it look nice
 
-[H]. remove item after taking
+[V]. remove item after taking
 
 [V]. connect items
 [V]. show the users: add sceneId

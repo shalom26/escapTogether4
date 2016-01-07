@@ -398,3 +398,9 @@ div.tooltip:hover:after {
 #lmsg {
     font-size: 12px;
 }
+
+
+/* ---------------------------------------------------------------------------*/
+.hotspot.key {
+    background-color: #0c60ee;
+}
